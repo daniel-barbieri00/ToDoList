@@ -2,8 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 import { View, TextInput, Button, StyleSheet } from 'react-native';
 
-export default function ToDoForm({ addTask }) {
+export default function ToDoForm({ addTaskProp }) {
     const [taskText, setTaskText] = useState('');
+
+    const handleAddTask = () => {
+        addTaskProp(taskText);
+        setTaskText('');
+    };
 
     return (
         <View>
@@ -13,7 +18,7 @@ export default function ToDoForm({ addTask }) {
                 onChangeText={(text) => setTaskText(text)}
                 value={taskText}
             />
-            <Button title="Add Task" onPress={() => addTask(taskText)} />
+            <Button title="Add Task" onPress={handleAddTask} />
         </View>
     );
 };

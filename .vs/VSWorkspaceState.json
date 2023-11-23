@@ -1,7 +1,6 @@
 {
   "ExpandedNodes": [
     "",
-    "\\android",
     "\\android\\app",
     "\\android\\app\\src",
     "\\android\\app\\src\\debug",
@@ -9,8 +8,10 @@
     "\\android\\app\\src\\debug\\java\\com",
     "\\android\\app\\src\\debug\\java\\com\\todolist",
     "\\android\\app\\src\\main",
-    "\\ios\\ToDoList"
+    "\\components",
+    "\\layouts",
+    "\\screens"
   ],
-  "SelectedNode": "\\.bundle",
+  "SelectedNode": "\\components\\ToDoForm.jsx",
   "PreviewInSolutionExplorer": false
 }
